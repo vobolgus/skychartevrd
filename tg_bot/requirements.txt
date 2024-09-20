@@ -1,0 +1,9 @@
+# Основная библиотека для взаимодействия с Telegram API
+python-telegram-bot==20.*
+
+# Для астрономических расчётов и работы с массивами (если нужно)
+numpy
+plotly
+astroquery
+ephem
+kaleido
