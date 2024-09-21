@@ -33,7 +33,7 @@ def generate_latex_report(observer_lat, observer_lon, skychart_filename, output_
     
     \newcommand{\hwnum}{Сборная Москвы}
 	\newcommand{\subject}{№""" + str(number) + r"""}
-	\newcommand{\skykey}{"""+ f'{observer_lat:02d} {hours:02d}:{minutes:02d}' +r"""}
+	\newcommand{\skykey}{}
     
     \begin{document}
     
