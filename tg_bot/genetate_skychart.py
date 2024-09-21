@@ -17,8 +17,6 @@ def generate_skychart(lat, lon, skychart_filename, tex_filename, output_director
                 ["pdflatex", f"-output-directory={output_directory}", tex_filename],
                 stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True
         )
-
-        shutil.rmtree(output_directory)
         return visible_messier_names, visible_stars
     except subprocess.CalledProcessError as e:
             return

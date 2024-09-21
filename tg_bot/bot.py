@@ -111,10 +111,10 @@ async def send_skychart(update: Update, context: CallbackContext, observer_lat_l
                     await update.message.reply_text("Ошибка: объединённый PDF не найден.")
 
                 # Очистка файлов
+                shutil.rmtree(output_directory)
                 return
-
             else:
-                await update.message.reply_text(f"Ошибка: скайчарт с номером {chart_number} не найден.")
+                await update.message.reply_text(f"Ошибка: скайчарт с номером {ansnum} не найден.")
                 return
         except ValueError:
             await update.message.reply_text("Ошибка: Номер скайчарта должен быть целым числом.")
