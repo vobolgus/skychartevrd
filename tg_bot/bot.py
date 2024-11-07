@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 TOKEN = '6970617362:AAHzG9nFVb1SAq2u_3d6tmip-Gl5N81qAv4'  # Укажите реальный токен
 
 # Путь для хранения информации о сгенерированных скайчартах и текущем номере
-CHARTS_DIR = "./generated_charts"
+CHARTS_DIR = "tg_bot/generated_charts"
 CURRENT_NUMBER_FILE = os.path.join(CHARTS_DIR, "current_number.json")
 
 # Создание директории для хранения скайчартов, если её ещё нет
